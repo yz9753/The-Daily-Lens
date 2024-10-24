@@ -22,20 +22,20 @@ To run this application locally, follow these steps:
     ```bash
     npm install
 
-3. **Set up your API key**: 
-
+3. **Set up your API key**:
+   
 Create a .env file in the root of your project and add the Currents API key (provided in the lytespace submission) 
     ```bash
     REACT_APP_CURRENTS_API_KEY=your_api_key_here
 
 
-4. **Run the application**:
+5. **Run the application**:
 
    ```bash
    npm start
 
 
-5. **If it didn't start, open your browser and go to http://localhost:3000.**
+6. **If it didn't start, open your browser and go to http://localhost:3000.**
 
 
 ## LLM Assistance 
@@ -44,7 +44,7 @@ In building this application, I utilized a large language model (LLM) to assist 
 
 ## How to Use
 
-	1.	Select search by keyword or category in the dropdown 
-	2.	If searching by keyword, enter your desired keyword in the input field and click the “Search” button.
-	3.	If searching by category, click on one of the category buttons to fetch relevant articles.
-	4.	Optionally, select the desired language from the dropdown menu to filter news articles.
+1.	Select search by keyword or category in the dropdown 
+2.	If searching by keyword, enter your desired keyword in the input field and click the “Search” button.
+3.	If searching by category, click on one of the category buttons to fetch relevant articles.
+4.	Optionally, select the desired language from the dropdown menu to filter news articles.
