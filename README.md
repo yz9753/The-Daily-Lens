@@ -24,7 +24,7 @@ To run this application locally, follow these steps:
 
 3. **Set up your API key**:
    
-Create a .env file in the root of your project and add the Currents API key (provided in the lytespace submission) 
+   Create a .env file in the root of your project and add the Currents API key (provided in the lytespace submission) 
     ```bash
     REACT_APP_CURRENTS_API_KEY=your_api_key_here
 
