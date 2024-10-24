@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# The Daily Lens
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Daily Lens is a React-based web application that provides users with the latest news from around the world. The app utilizes the CURRENTS API (https://currentsapi.services/en) to gather news articles. The key features of the app include advanced filtering options, allowing users to search via keywords or categories as well as selecting their language preference. This solves the problem of having to go to multiple different news outlets to find news, some of which are skewed towards local news or presents biases on certain topics. 
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search by Keyword**: Users can enter a keyword to fetch relevant news articles.
+- **Search by Category**: Users can select a category to view news articles related to that category.
+- **Language Selection**: Users can choose the language of the news articles from multiple options.
+- **Responsive Design**: The application is designed to be mobile-friendly and responsive.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this application locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yz9753/The-Daily-Lense.git
+   cd The-Daily-Lense
 
-### `npm test`
+2. **Install dependencies**:
+    ```bash
+    npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Set up your API key**: 
 
-### `npm run build`
+Create a .env file in the root of your project and add the Currents API key (provided in the lytespace submission) 
+    ```bash
+    REACT_APP_CURRENTS_API_KEY=your_api_key_here
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Run the application**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm start
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **If it didn't start, open your browser and go to http://localhost:3000.**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## LLM Assistance 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In building this application, I utilized a large language model (LLM) to assist in desinging the website with css. It also helped me to debug when I was having difficulty updating the category instantly when the user selects the specific category in which I added two React hooks useEffect and useCallback. 
 
-## Learn More
+## How to Use
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+	1.	Select search by keyword or category in the dropdown 
+	2.	If searching by keyword, enter your desired keyword in the input field and click the “Search” button.
+	3.	If searching by category, click on one of the category buttons to fetch relevant articles.
+	4.	Optionally, select the desired language from the dropdown menu to filter news articles.

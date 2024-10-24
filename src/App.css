@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Header Style */
+.header {
+  background-color: #7f7f7f; /* Navy blue background for the header */
+  padding: 15px 20px; /* Padding around header */
+  text-align: left; /* Align text to the left */
+  position: sticky; /* Sticky header */
+  top: 0; /* Sticks to the top */
+  z-index: 1000; /* Ensures header is above other content */
+  color: white; /* Change text color for contrast */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  margin: 0;
+  cursor: pointer; /* Pointer cursor to indicate clickable */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* General Styles */
+body {
+  font-family: 'Georgia', serif; /* Similar to New York Times font */
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1; /* Light background color */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Horizontal Lines */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: black; /* Black horizontal line */
+  margin: 20px 0; /* Space around lines */
 }
 
-.App-link {
-  color: #61dafb;
+/* Article Styles */
+.news-article {
+  background: white; /* Background for each article */
+  margin: 20px 0; /* Space between articles */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Grey separator between articles */
+.article-separator {
+  border: 0;
+  height: 1px;
+  background-color: #dcdcdc; /* Light grey */
+}
+
+/* Title and Description Styles */
+.article-title {
+  color: #000; /* Black for title */
+  font-size: 1.5em; /* Larger font size */
+  margin-bottom: 10px; /* Space below title */
+  font-weight: normal; /* Change this to 'normal' for less boldness */
+}
+
+.article-description {
+  color: #555; /* Dark grey for description */
+  font-size: 1em; /* Standard size for description */
+  overflow: auto; /* Allow scrolling if too long */
+  max-height: 100px; /* Limit height for scrolling */
+}
+
+/* Image Styles */
+.article-image {
+  width: 150px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  object-fit: cover; /* Ensure proper fitting */
+  border-radius: 5px; /* Optional: rounded corners for images */
+}
+
+/* Placeholder Image */
+.placeholder-image {
+  width: 150px; /* Same dimensions as images */
+  height: 100px; /* Same dimensions as images */
+  background-color: #f0f0f0; /* Placeholder color */
+  border-radius: 5px; /* Optional: rounded corners for placeholder */
+}
+
+/* Button Styles */
+button {
+  background-color: #ccc; /* Grey buttons */
+  border: none; /* Remove default border */
+  padding: 5px 25px; /* More padding for a horizontal button */
+  margin: 5px; /* Margin around buttons */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
+  font-size: 0.9em; /* Increase font size for better visibility */
+}
+
+button:hover {
+  background-color: #b0b0b0; /* Darker grey on hover */
+}
+
+/* Flexbox for articles layout */
+.articles-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping of articles */
+  justify-content: space-between; /* Equal spacing */
+}
+
+/* Responsive article sizing */
+.news-article {
+  flex: 0 1 calc(33% - 20px); /* Three articles in a row with spacing */
+  margin-bottom: 20px; /* Margin below each article */
+}
+
+/* Link Styles for "Read More" */
+.news-article a {
+  color: #333; /* Dark grey color for the link */
+  text-decoration: none; /* Remove underline from the link */
+  font-weight: bold; /* Make the text bold */
+}
+
+.news-article a:hover {
+  text-decoration: underline; /* Underline on hover for emphasis */
 }
